@@ -22,7 +22,7 @@
   @include font($ffYesevaOne, 400, 36px);
 }
 
-.description{
+.description {
   line-height: 24px;
   text-align: center;
 
@@ -54,7 +54,7 @@ header {
   @include content(flex, row, center, flex-end, $marg0auto);
 }
 
-.header__logo{
+.header__logo {
   left: -35px;
   position: absolute;
 }
@@ -109,7 +109,7 @@ header {
 .main_divider {
   width: 100%;
   height: 50px;
-  background: url("../Images/Main/dividerMainYellow.png") no-repeat center;
+  background: url("../Images/Main/dividerMainYellow.png") no-repeat 46% 50%;
 }
 
 //Intro
@@ -225,26 +225,26 @@ header {
 
   background: url("../Images/Main/Ingredients/ingredients.png") no-repeat center/cover;
 
-  & .title{
+  & .title {
     color: #ffffff;
   }
 
-  & .main_divider{
-    background: url("../Images/Main/Ingredients/dividerMainWhite.png") no-repeat center;
+  & .main_divider {
+    background: url("../Images/Main/Ingredients/dividerMainWhite.png") no-repeat 46% 50%;
   }
 
-  & .description{
+  & .description {
     width: 430px;
     color: #ffffff;
     margin: $marg0auto;
   }
 }
 
-.ingredients__inner{
+.ingredients__inner {
   @include content(flex, row, center, flex-end, $marg0auto);
 }
 
-.ingredients__block{
+.ingredients__block {
   width: 570px;
   height: 557px;
   padding-top: 80px;
@@ -253,12 +253,66 @@ header {
   background-color: rgba(0, 0, 0, 0.7019607843);
 }
 
-.ingredients_images{
+.ingredients_images {
   width: 100%;
   bottom: 30px;
   height: 250px;
   position: absolute;
   //border: 5px solid rgba(255,255,255,0.09);
   background: url("../Images/Main/Ingredients/image.png") no-repeat top;
+}
 
+//Menu
+.menu {
+  width: 100%;
+  padding: 100px 0;
+  height: 1000px;
+
+  background: url("../Images/Main/Menu/pattern.png") no-repeat center/cover;
+}
+
+.menu__inner{
+  @include content(flex, row, center, space-between, $marg0auto);
+}
+
+.menu__column{
+  height: 100%;
+  @include content(flex, column, center, space-between, $marg0auto);
+
+
+}
+
+.menu__group{
+
+
+}
+
+.menu__item{
+  line-height: 29px;
+  color: #c89f2d;
+  text-align: left;
+  height: 81px;
+  @include font($ffYesevaOne, 400, 21px);
+
+  & .description{
+    color: black;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  &.special{
+    border: 1px solid #c89f2d;
+  }
+}
+
+.menu__dish{
+  @include content(flex, row, center, space-between, $marg0auto);
+}
+
+.line{
+  width: 430px;
+  height: 1px;
+  background-color: #c89f2d;
+  border: 0.06px solid #fbf7c0;
 }

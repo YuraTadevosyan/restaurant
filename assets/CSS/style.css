@@ -112,7 +112,7 @@ header {
 .main_divider {
   width: 100%;
   height: 50px;
-  background: url("../Images/Main/dividerMainYellow.png") no-repeat center;
+  background: url("../Images/Main/dividerMainYellow.png") no-repeat 46% 50%;
 }
 
 .intro {
@@ -222,7 +222,7 @@ header {
   color: #ffffff;
 }
 .ingredients .main_divider {
-  background: url("../Images/Main/Ingredients/dividerMainWhite.png") no-repeat center;
+  background: url("../Images/Main/Ingredients/dividerMainWhite.png") no-repeat 46% 50%;
 }
 .ingredients .description {
   width: 430px;
@@ -252,6 +252,64 @@ header {
   height: 250px;
   position: absolute;
   background: url("../Images/Main/Ingredients/image.png") no-repeat top;
+}
+
+.menu {
+  width: 100%;
+  padding: 100px 0;
+  height: 1000px;
+  background: url("../Images/Main/Menu/pattern.png") no-repeat center/cover;
+}
+
+.menu__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.menu__column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.menu__item {
+  line-height: 29px;
+  color: #c89f2d;
+  text-align: left;
+  height: 81px;
+  font-family: "Yeseva One", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+}
+.menu__item .description {
+  color: black;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 15px;
+}
+.menu__item.special {
+  border: 1px solid #c89f2d;
+}
+
+.menu__dish {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.line {
+  width: 430px;
+  height: 1px;
+  background-color: #c89f2d;
+  border: 0.06px solid #fbf7c0;
 }
 
 /*# sourceMappingURL=style.css.map */
