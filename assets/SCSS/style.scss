@@ -124,10 +124,9 @@ header {
 }
 
 .intro__title {
-  width: 970px;
   text-align: center;
 
-  & h1 {
+  h1 {
     color: #ffffff;
     @include font($ffYesevaOne, 400, 90px);
     filter: drop-shadow(0.469px 0.883px 1px rgba(1, 1, 1, 0.64));
@@ -149,7 +148,7 @@ header {
   width: 100%;
   text-align: center;
 
-  & .btn {
+  .btn {
     width: 228px;
     height: 57px;
     outline: none;
@@ -168,7 +167,7 @@ header {
       background-color: rgba(255, 255, 255, 0.2784313725490196);
     }
 
-    & span {
+    span {
       color: #ffffff;
       text-align: center;
       text-transform: uppercase;
@@ -189,7 +188,7 @@ header {
 
   background: url("../Images/Main/About/pattern.png") no-repeat center /cover;
 
-  & .description {
+  .description {
     width: 432px;
     color: #4c4c4c;
     margin: 30px 0 50px 0;
@@ -213,7 +212,6 @@ header {
 .about_dish-image {
   width: 100%;
   height: 625px;
-
   background: url("../Images/Main/About/dish.png") no-repeat center;
 
 }
@@ -225,15 +223,15 @@ header {
 
   background: url("../Images/Main/Ingredients/ingredients.png") no-repeat center/cover;
 
-  & .title {
+  .title {
     color: #ffffff;
   }
 
-  & .main_divider {
+  .main_divider {
     background: url("../Images/Main/Ingredients/dividerMainWhite.png") no-repeat 46% 50%;
   }
 
-  & .description {
+  .description {
     width: 430px;
     color: #ffffff;
     margin: $marg0auto;
@@ -259,6 +257,7 @@ header {
   height: 250px;
   position: absolute;
   //border: 5px solid rgba(255,255,255,0.09);
+
   background: url("../Images/Main/Ingredients/image.png") no-repeat top;
 }
 
@@ -266,51 +265,66 @@ header {
 .menu {
   width: 100%;
   padding: 100px 0;
-  height: 1000px;
+  min-height: 800px;
 
   background: url("../Images/Main/Menu/pattern.png") no-repeat center/cover;
 }
 
-.menu__inner{
+.menu__inner {
   @include content(flex, row, center, space-between, $marg0auto);
 }
 
-.menu__column{
+.menu__column {
   height: 100%;
   @include content(flex, column, center, space-between, $marg0auto);
 
 
 }
 
-.menu__group{
-
-
+.menu__group {
+  @include content(flex, column, center, space-between, $marg0auto);
 }
 
-.menu__item{
-  line-height: 29px;
+.menu__item {
+  height: 81px;
   color: #c89f2d;
   text-align: left;
-  height: 81px;
+  line-height: 29px;
   @include font($ffYesevaOne, 400, 21px);
 
-  & .description{
+  .description {
     color: black;
     font-size: 14px;
     text-align: left;
     margin-top: 15px;
   }
 
-  &.special{
+  &.special {
+    position: relative;
     border: 1px solid #c89f2d;
+
+    .menu_tag {
+      top: -22px;
+      right: -1px;
+      width: 69px;
+      height: 22px;
+      color: #f8fafa;
+      line-height: 24px;
+      position: absolute;
+      text-align: center;
+
+      background: url("../Images/Main/Ingredients/special.png") no-repeat center;
+
+      @include font($ffLato, 400, 14px);
+    }
   }
 }
 
-.menu__dish{
+.menu__dish {
   @include content(flex, row, center, space-between, $marg0auto);
 }
 
-.line{
+.line {
   width: 430px;
   height: 1px;
   background-color: #c89f2d;

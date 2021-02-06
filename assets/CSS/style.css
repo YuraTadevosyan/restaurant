@@ -130,7 +130,6 @@ header {
 }
 
 .intro__title {
-  width: 970px;
   text-align: center;
 }
 .intro__title h1 {
@@ -257,7 +256,7 @@ header {
 .menu {
   width: 100%;
   padding: 100px 0;
-  height: 1000px;
+  min-height: 800px;
   background: url("../Images/Main/Menu/pattern.png") no-repeat center/cover;
 }
 
@@ -278,11 +277,19 @@ header {
   margin: 0 auto;
 }
 
+.menu__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .menu__item {
-  line-height: 29px;
+  height: 81px;
   color: #c89f2d;
   text-align: left;
-  height: 81px;
+  line-height: 29px;
   font-family: "Yeseva One", sans-serif;
   font-weight: 400;
   font-size: 21px;
@@ -294,7 +301,22 @@ header {
   margin-top: 15px;
 }
 .menu__item.special {
+  position: relative;
   border: 1px solid #c89f2d;
+}
+.menu__item.special .menu_tag {
+  top: -22px;
+  right: -1px;
+  width: 69px;
+  height: 22px;
+  color: #f8fafa;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  background: url("../Images/Main/Ingredients/special.png") no-repeat center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .menu__dish {
