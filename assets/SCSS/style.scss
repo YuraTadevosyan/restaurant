@@ -271,6 +271,7 @@ header {
 }
 
 .menu__inner {
+  flex-wrap: wrap;
   @include content(flex, row, center, space-between, $marg0auto);
 }
 

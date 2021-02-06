@@ -261,6 +261,7 @@ header {
 }
 
 .menu__inner {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   align-items: center;
