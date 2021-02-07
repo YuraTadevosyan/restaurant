@@ -109,6 +109,7 @@ header {
 .main_divider {
   width: 100%;
   height: 50px;
+
   background: url("../Images/Main/dividerMainYellow.png") no-repeat 46% 50%;
 }
 
@@ -278,8 +279,6 @@ header {
 .menu__column {
   height: 100%;
   @include content(flex, column, center, space-between, $marg0auto);
-
-
 }
 
 .menu__group {
@@ -326,8 +325,66 @@ header {
 }
 
 .line {
-  width: 430px;
   height: 1px;
+  width: 430px;
   background-color: #c89f2d;
   border: 0.06px solid #fbf7c0;
+}
+
+//Reviews
+.reviews {
+  width: 100%;
+  height: 758px;
+
+  background: url("../Images/Main/Reviews/reviews.png") no-repeat center/cover;
+}
+
+.reviews__inner {
+  @include content(flex, row, center, center, $marg0auto);
+}
+
+.reviews__block {
+  width: 80%;
+  padding: 80px 0;
+  max-width: 774px;
+  position:relative;
+
+  background: url("../Images/Main/Reviews/background.png") no-repeat center/cover;
+
+
+  &:before{
+    top: 160px;
+    left: 40px;
+    width: 32px;
+    content: '';
+    height: 25px;
+    position: absolute;
+
+    background: url("../Images/Main/Reviews/quotationMark.png") no-repeat center/cover;
+  }
+
+  .title {
+    //width: 370px;
+    //height: 73px;
+    color: #ffffff;
+  }
+
+  .main_divider {
+    background: url("../Images/Main/dividerMainWhite.png") no-repeat 33% 50%;
+  }
+
+  .description {
+    width: 630px;
+    color: #dde0df;
+    margin: 0 auto;
+    line-height: 45px;
+
+    @include font($ffGentiumBookBasic, 700, 25px);
+
+    .desc{
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
 }
